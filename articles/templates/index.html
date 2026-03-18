@@ -7,4 +7,30 @@
 {% block content %}
     <h1>Tous les articles </h1>
     <p>Voici tous les article </p>
+    
+    {% for article in mes_articles %}
+        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+
+            <h2>{{ article.titre_article }}</h2>
+            <p>{{article.description_article}}</p>
+            <h3>{{ article.titre_1 }}</h3>
+            <p>{{ article.paragraphe_1 }}</p>
+
+            {% if article.titre_2 %}
+                <h3>{{ article.titre_2 }}</h3>
+                <p>{{ article.paragraphe_2 }}</p>
+            {% endif %}
+
+            {% if article.titre_3 %}
+                <h3>{{ article.titre_3 }}</h3>
+                <p>{{ article.paragraphe_3 }}</p>
+            {% endif %}
+
+            {% if article.titre_4 %}
+                <h3>{{ article.titre_4 }}</h3>
+                <p>{{ article.paragraphe_4 }}</p>
+            {% endif %}
+
+        </div>
+    {% endfor %}
 {% endblock %}

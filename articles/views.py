@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Article
 
 # Create your views here.
 def home_page(request):
-    return render(request,"index.html")
+    articles = Article.objects.all()
+    return render(request,"index.html",{"mes_articles": articles})
