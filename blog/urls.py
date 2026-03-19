@@ -20,6 +20,7 @@ from articles.views import *
 
 urlpatterns = [
     path('',home_page),
+    path('article/<int:article_id>/',un_article,name="details_article"),
     path('admin/', admin.site.urls),
     
 ]

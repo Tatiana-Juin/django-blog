@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Tous les articles de blog 
+{% endblock %}
+
+{% block content %}
+        <a href="/"> Accueil</a>
+    
+        <div>
+            <h1>{{ article.titre_article }}</h1>
+            <p>{{article.description_article}}</p>
+            <h2>{{ article.titre_1 }}</h2>
+            <p>{{ article.paragraphe_1 }}</p>
+
+            {% if article.titre_2 %}
+                <h2>{{ article.titre_2 }}</h2>
+                <p>{{ article.paragraphe_2 }}</p>
+            {% endif %}
+
+            {% if article.titre_3 %}
+                <h2>{{ article.titre_3 }}</h2>
+                <p>{{ article.paragraphe_3 }}</p>
+            {% endif %}
+
+            {% if article.titre_4 %}
+                <h2>{{ article.titre_4 }}</h2>
+                <p>{{ article.paragraphe_4 }}</p>
+            {% endif %}
+
+        </div>
+    
+{% endblock %}
