@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* *********** INDEX ************** */
+.title_page{
+    text-align: center;
+    color:purple;
+    margin: 20px 0 20px 0;
+    
+}
+
+.all_article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card{
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 25px;
+    width: 80vw;
+    border-radius: 20px;
+}
+
+.title_article{
+    margin:10px 0 20px 0;
+}
+
+.description_article{
+    margin-bottom: 40px;
+    font-size:17px;
+}
+
+
+.btn_article{
+    border : 1px solid #ffeeee;
+    padding:20px;
+    color:black;
+    background-color: #ffeeee;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* ******** UN ARTICLE  */
+
+.btn{
+    margin:50px 0 20px 20px;
+}
+
+.un_article{
+    padding: 30px;
+   
+}
+
+.title_section,.description_section{
+    margin-top:18px;
+}
+
+.description_section{
+    font-size:17px;
+}
+

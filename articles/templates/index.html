@@ -5,15 +5,15 @@
 {% endblock %}
 
 {% block content %}
-    <h1 style="text-align: center;">Tous les articles </h1>
+    <h1  class="title_page">Tous les articles </h1>
     
-    <div style="display: flex; align-items: center; flex-direction: column;">
+    <div class="all_article">
         {% for article in mes_articles %}
-            <div style="border: 1px solid #ccc; padding: 20px; margin-bottom: 10px; width: 80vw;" >
+            <div  class="card" >
 
-                <h2 >{{ article.titre_article }}</h2>
-                <p>{{article.description_article}}</p>
-                <a href=" {% url 'details_article' article.id %} " style="text-decoration: none;"> Voir plus </a>
+                <h2 class="title_article">{{ article.titre_article }}</h2>
+                <p class="description_article">{{article.description_article}}</p>
+                <a href=" {% url 'details_article' article.id %} "  class="btn_article"> Voir plus </a>
                 
 
             </div>
